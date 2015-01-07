@@ -1,40 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-	<meta charset="utf-8" />
+	<meta charset="UTF-8">
 	<title>BerakaChronos v2</title>
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
   	</head>
 	<body>
         
-
-
-
-     <style>
-
-        #slidr-home-demo div {
-            line-height: 70px;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            font-size: 70px;
-            font-weight: 600;
-            letter-spacing: 0px;
-            color: white;
-        }
-
-        #slidr-home-demo {
-            width: 1680px;
-            height: 450px;
-            margin: 0 auto;
-        }
-
-        .demo-slides div{width:100%;padding: 5px;}
-
-    </style>
-
-    <div id="slidr-home-demo">
+    <div class="slidr-home-demo">
         <div id="slidr-home" class="demo-slides">
             <div class="slideOne" data-slidr="one" ><h2>Reuniones de oracion</h2><br>Domingos 09:57am<br> Jueves 18:58hrs</div>
             <div class="slideTwo" data-slidr="two"><h2>Historia de los Jueces </h2><br>Jueves 20:00hrs</div>
@@ -47,23 +21,7 @@
     
     </div>
     <script src="assets/js/slidr.min.js"></script>
-     <script>
-        var s = slidr.create('slidr-home', {
-            breadcrumbs: false,
-            controls: 'none',
-            fade: true,
-            keyboard: true,
-            overflow: true,
-            touch: true,
-            timing: { 'linear': '0.5s ease-in'},
-      		transition: 'linear'
-            
-     	
-    })
-    s.add('h', ['one', 'two', 'three', 'four', 'five', 'six', 'one'], 'linear');
-    s.auto(7000, 'right');
-    </script>
-
+    <script type="text/javascript" src="assets/js/dashboard.js"></script>
 	</body>
 </html>
 
