@@ -5,11 +5,28 @@
 	<title>BerakaChronos v2</title>
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/soon.min.css">
+
   	</head>
 	<body>
-    <div class="cntDwnMaster">
-        
-    </div>    
+   
+    <style type="text/css">
+    #my-soon-counter .soon-reflection {opacity:.4;}
+    #my-soon-counter {background-color:#ffffff;}
+    #my-soon-counter .soon-reflection {background-color:#ffffff;background-image:linear-gradient(#ffffff 25%,rgba(255,255,255,0));}
+    #my-soon-counter {color:#8c8c8c;}
+    #my-soon-counter .soon-label {color:#4d4a4d;}
+    </style>
+    <div class="soon" id="my-soon-counter"
+        data-due="sunday at 10:30"
+        data-layout="group label-big"
+        data-scale-max="xxl"
+        data-format="h,m,s"
+        data-reflect="true"
+        data-face="slot doctor"
+        data-visual="ring cap-round invert progressgradient-aaa2f6_f10909 ringgradient-f0f0f0_a5a5a5"
+        data-singular="true">
+    </div>
     <div class="slidr-home-demo">
         <div id="slidr-home" class="demo-slides">
             <div class="slideOne" data-slidr="one" ><h2>Reuniones de oracion</h2><br>Domingos 09:57am<br> Jueves 18:58hrs</div>
@@ -24,6 +41,7 @@
     </div>
     <script src="assets/js/slidr.min.js"></script>
     <script type="text/javascript" src="assets/js/dashboard.js"></script>
+    <script src="assets/js/soon.min.js"></script>
 	</body>
 </html>
 
