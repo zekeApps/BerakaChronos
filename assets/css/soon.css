@@ -1554,6 +1554,10 @@
   margin-top: -.1875em;
 }
 
+.soon[data-scale='xxxl'] {
+  font-size: 8rem;
+}
+
 .soon[data-scale='xxl'] {
   font-size: 4rem;
 }
