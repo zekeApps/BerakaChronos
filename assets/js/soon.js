@@ -2254,7 +2254,7 @@ var Ticker = (function(win,undefined){
 // private API
 var size = 0;
 var respondTimer = null;
-var scales = ['xxl','xl','l','m','s','xs','xxs'];
+var scales = ['uxxl','xxl','xl','l','m','s','xs','xxs'];
 var scaleDefault = 3; // m
 var scaleCount = scales.length;
 var soons = [];
