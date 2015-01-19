@@ -137,3 +137,23 @@ html
 	text-align: center
 h2
 	margin-top: 16px
+
+.canvas
+	max-width 500px
+	overflow hidden
+	position relative
+	&-menu
+		width 200px
+		position absolute
+		left -200px
+		top 0
+		&.is-active 
+			left 0
+	&-sidebar
+		position absolute
+		width 200px
+		right -200px
+		top 0	
+		&.is-active
+			right 0	
+		
