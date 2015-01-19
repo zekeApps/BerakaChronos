@@ -5,10 +5,10 @@ var s = slidr.create('slidr-home', {
     keyboard: true,
     overflow: true,
     touch: true,
-    timing: { 'linear': '0.5s ease-in'},
+    timing: { 'linear': '0.85s ease-in'},
 		transition: 'linear'
             
      	
 })
 s.add('h', ['one', 'two', 'three', 'four', 'five', 'six', 'one'], 'linear');
-s.auto(7000, 'right');
+s.auto(10000, 'right');
