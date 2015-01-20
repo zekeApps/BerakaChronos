@@ -1,4 +1,34 @@
 @import "soon.styl"
+
+.canvas
+	height 30px
+	overflow hidden	
+	position relative
+	
+	&-menu
+		color white
+		background black
+		width 200px
+		position absolute
+		left -200px
+		top 0
+		text-align left
+		-webkit-transition 1s
+		&.is-active
+			left 0
+		
+
+	&-sidebar
+		color white
+		background black
+		position absolute
+		width 200px
+		right -200px
+		text-align right
+		-webkit-transition 1s
+		&.is-active
+			right 0
+		
 @media screen and (min-width:767px)
 	.slidr-home-demo
 		div {
@@ -128,6 +158,7 @@
 #my-soon-counter .soon-label 
 	color:#C693B3
 
+
 html 
 	font-family: 'Quicksand', sans-serif
 	color: #3d464d
@@ -138,22 +169,5 @@ html
 h2
 	margin-top: 16px
 
-.canvas
-	max-width 500px
-	overflow hidden
-	position relative
-	&-menu
-		width 200px
-		position absolute
-		left -200px
-		top 0
-		&.is-active 
-			left 0
-	&-sidebar
-		position absolute
-		width 200px
-		right -200px
-		top 0	
-		&.is-active
-			right 0	
+
 		
