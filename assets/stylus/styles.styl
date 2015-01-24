@@ -1,6 +1,36 @@
 @import "soon.styl"
 
+transition(param)
+	-webkit-transition param
+	-moz-transition param
+	-o-transition param
+	-ms-transition param
+	transition param
 
+background-linear-gradient(deg, startColor, endColor)
+	background-color startColor
+	background-image -webkit-linear-gradient(deg, startColor , endColor )
+	background-image -moz-linear-gradient(deg, startColor , endColor )
+	background-image -ms-linear-gradient(deg, startColor , endColor )
+	background-image -o-linear-gradient(deg, startColor , endColor )
+	background-image linear-gradient(deg, startColor , endColor )
+
+
+.settings
+	
+	
+	//overflow hidden
+	&-title
+		position absolute
+		color: #CDCDCD
+	&-menu
+		position absolute
+		top 30px
+		left -200px
+		width 200px
+		&.is-active
+			left 0
+			transition(1s)
 		
 @media screen and (min-width:767px)
 	.slidr-home-demo
@@ -96,28 +126,34 @@
 	}
 		
 .slideOne 
-	background-image: -webkit-linear-gradient(45deg,#f31626,#ffab3a)
-	-webkit-text-fill-color: white
+	background-linear-gradient(45deg,#f31626,#ffab3a)
+	// background-image: -webkit-linear-gradient(45deg,#f31626,#ffab3a)
+	color: white  !important
 
 .slideTwo 
-	background-image: -webkit-linear-gradient(150deg,#2283E3,#58FFA0)
-	-webkit-text-fill-color: white
+	background-linear-gradient(150deg,#2283E3,#58FFA0)
+	// background-image: -webkit-linear-gradient(150deg,#2283E3,#58FFA0)
+	color: white !important
 
 .slideThree 
-	background-image: -webkit-linear-gradient(222deg,#8099A7,#FF93DA)
-	-webkit-text-fill-color: white
+	background-linear-gradient(222deg,#8099A7,#FF93DA)
+	// background-image: -webkit-linear-gradient(222deg,#8099A7,#FF93DA)
+	color: white !important
 
 .slideFour 
-	background-image: -webkit-linear-gradient(150deg,#FFDC00,#C8F6F7)
-	-webkit-text-fill-color: #565656
+	background-linear-gradient(150deg,#FFDC00,#C8F6F7)
+	// background-image: -webkit-linear-gradient(150deg,#FFDC00,#C8F6F7)
+	color: #565656 !important
 
 .slideFive 
-	background-image: -webkit-linear-gradient(110deg,#B20094,#AACDCA)
-	-webkit-text-fill-color: white
+	background-linear-gradient(110deg,#B20094,#AACDCA)
+	// background-image: -webkit-linear-gradient(110deg,#B20094,#AACDCA)
+	color: white !important
 
 .slideSix 
-	background-image: -webkit-linear-gradient(33deg,#6DDABC,#FFFBB5)
-	-webkit-text-fill-color: #565656
+	background-linear-gradient(33deg,#6DDABC,#FFFBB5)
+	// background-image: -webkit-linear-gradient(33deg,#6DDABC,#FFFBB5)
+	color: #565656 !important
 
 #my-soon-counter .soon-reflection 
 	opacity:.4
